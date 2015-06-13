@@ -1,12 +1,15 @@
 module.exports = function( grunt ) {
 
+  files = [
+    "**/*.jade",
+    "**/*.json"
+  ]
+
   grunt.config(
     "watch",
     {
       dev: {
-        files: [
-          "**/*.jade"
-        ],
+        files: files,
         tasks: [ "assetsDev" ],
         options: {
           interrupt: true,
@@ -14,9 +17,7 @@ module.exports = function( grunt ) {
         }
       },
       prod: {
-        files: [
-          "**/*.jade"
-        ],
+        files: files,
         tasks: [ "assetsProd" ],
         options: {
           interrupt: true

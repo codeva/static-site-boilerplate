@@ -2,17 +2,23 @@ var Path = require( "path" );
 
 module.exports = function (grunt) {
 
+  pages = [
+    "index.jade"
+  ]
+
   grunt.config.set('jade', {
     dev: {
       options: {
         pretty: true,
         data: function(dest, src) {
-          return readContext();
+          context = readContext();
+          context.livereload = true;
+          return context;
         }
       },
       files: [{
         expand: true,
-        src: "**/*.jade",
+        src: pages,
         dest: "dist/",
         cwd: "jade",
         ext: '.html'
@@ -26,7 +32,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          src: "**/*.jade",
+          src: pages,
           dest: "dist/",
           cwd: "jade",
           ext: '.html'

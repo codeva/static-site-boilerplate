@@ -1,15 +1,29 @@
 module.exports = function (grunt) {
 
   grunt.config.set('jade', {
-    options: {
-      pretty: true
-    },
-    files: {
-      expand: true,
-      src: "**/*.jade",
-      dest: "dist/",
-      cwd: "jade",
-      ext: '.html'
+    dev: {
+      options: {
+        pretty: true
+      },
+      files: [{
+        expand: true,
+        src: "**/*.jade",
+        dest: "dist/",
+        cwd: "jade",
+        ext: '.html'
+      }],
+      prod: {
+        options: {
+          pretty: false
+        },
+        files: [{
+          expand: true,
+          src: "**/*.jade",
+          dest: "dist/",
+          cwd: "jade",
+          ext: '.html'
+        }]
+      }
     }
   });
 

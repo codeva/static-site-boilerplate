@@ -1,0 +1,37 @@
+{
+  "name": "my-web-project",
+  "version": "1.0.0",
+  "authors": [
+    "Kay Wolter <kay.wolter@codeva.de>"
+  ],
+  "description": "web dev boilerplate",
+  "license": "MIT",
+  "homepage": "www.codeva.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+
+  "exportsOverride": {
+    "jquery": {
+      "js": [
+        "./dist/jquery.min.js"
+      ]
+    },
+    "bootstrap": {
+      "js": [
+        "./dist/js/bootstrap.min.js"
+      ],
+      "css": [
+        "./dist/css/bootstrap.min.css"
+      ]
+    }
+  }
+
+}

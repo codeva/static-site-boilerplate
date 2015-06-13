@@ -1,7 +1,8 @@
 module.exports = function (grunt) {
 
-  grunt.registerTask('assetsProd', [
-    'jade:prod'
+  grunt.registerTask("assetsProd", [
+    "jade:prod",
+    "bower"
   ]);
 
 };

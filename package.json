@@ -1,0 +1,17 @@
+{
+  "name": "my-web-project",
+  "version": "1.0.0",
+  "description": "web dev boilerplate",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kay Wolter",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-jade": "^0.14.1",
+    "include-all": "^0.1.6"
+  }
+}

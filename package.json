@@ -9,6 +9,7 @@
   "author": "Kay Wolter",
   "license": "MIT",
   "devDependencies": {
+    "async": "^1.2.1",
     "grunt": "^0.4.5",
     "grunt-bower-task": "^0.4.0",
     "grunt-contrib-jade": "^0.14.1",

@@ -2,7 +2,10 @@ module.exports = function( grunt ) {
 
   files = [
     "**/*.jade",
-    "**/*.json"
+    "**/*.json",
+    "**/*.html",
+    "**/*.js",
+    "!dist/**/*"
   ]
 
   grunt.config(

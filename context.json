@@ -1,0 +1,13 @@
+{
+  "title": "Boilerplate Site",
+  "message": "Hello World!",
+
+  "pages": {
+    "index": {
+      "article": {
+        "id": "home",
+        "path": "sections/index.html"
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-var Path = require( "path" );
+var context = require( "../util/context" );
 
 module.exports = function (grunt) {
 
@@ -11,7 +11,7 @@ module.exports = function (grunt) {
       options: {
         pretty: true,
         data: function(dest, src) {
-          context = readContext();
+          context = context.readContext();
           context.livereload = true;
           return context;
         }
@@ -43,8 +43,3 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks( "grunt-contrib-jade" );
 };
-
-var readContext = function() {
-  globalContext = require( Path.join( process.cwd(), "context/global.json" ) );
-  return globalContext;
-}

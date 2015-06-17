@@ -3,7 +3,8 @@ module.exports = function (grunt) {
   grunt.registerTask("assetsProd", [
     "jade:prod",
     "stylus:compile",
-    "bower"
+    "bower",
+    "newer:copy"
   ]);
 
 };

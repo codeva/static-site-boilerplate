@@ -7,6 +7,9 @@ module.exports = function( grunt ) {
     "**/*.html",
     "**/*.md",
     "**/*.js",
+    "**/*.jpg",
+    "**/*.png",
+    "**/*.ico",
     "!dist/**/*"
   ]
 

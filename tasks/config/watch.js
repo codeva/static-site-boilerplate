@@ -2,6 +2,7 @@ module.exports = function( grunt ) {
 
   files = [
     "**/*.jade",
+    "**/*.styl",
     "**/*.json",
     "**/*.html",
     "**/*.md",

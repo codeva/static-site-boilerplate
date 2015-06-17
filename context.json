@@ -4,14 +4,16 @@
 
   "pages": {
     "index": {
+      "id": "index",
+      "title": "Home",
       "article": {
-        "id": "home",
         "path": "article/index.html"
       }
     },
     "about": {
+      "id": "about",
+      "title": "About",
       "article": {
-        "id": "about",
         "path": "article/about.md"
       }
     }

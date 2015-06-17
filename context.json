@@ -1,6 +1,6 @@
 {
-  "title": "Boilerplate Site",
-  "message": "Hello World!",
+  "title": "Hello World - Boilerplate Site",
+  "brand": "Hello World",
 
   "pages": {
     "index": {

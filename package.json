@@ -15,9 +15,7 @@
     "grunt-contrib-jade": "^0.14.1",
     "grunt-contrib-stylus": "^0.21.0",
     "grunt-contrib-watch": "^0.6.1",
-    "include-all": "^0.1.6"
-  },
-  "dependencies": {
-    "markdown": "^0.5.0"
+    "include-all": "^0.1.6",
+    "node-markdown": "^0.1.1"
   }
 }

@@ -1,7 +1,7 @@
 var Path = require( "path" );
 var Fs = require( "fs" );
 var Async = require( "async" );
-var Markdown = require( "markdown").markdown;
+var Markdown = require( "node-markdown").Markdown;
 
 var rootDirectory = process.cwd();
 
@@ -20,7 +20,7 @@ var readArticles = function( pages ) {
       if ( page.article && page.article.path ){
         page.article.content = Fs.readFileSync( Path.join( rootDirectory, page.article.path )).toString();
         if ( endsWith( page.article.path, ".md" ) ) {
-          page.article.content = Markdown.toHTML( page.article.content );
+          page.article.content = Markdown( page.article.content );
         }
       }
     }

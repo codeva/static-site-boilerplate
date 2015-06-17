@@ -6,7 +6,13 @@
     "index": {
       "article": {
         "id": "home",
-        "path": "sections/index.html"
+        "path": "article/index.html"
+      }
+    },
+    "about": {
+      "article": {
+        "id": "about",
+        "path": "article/about.md"
       }
     }
   }

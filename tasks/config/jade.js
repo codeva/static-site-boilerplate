@@ -3,17 +3,18 @@ var context = require( "../util/context" );
 module.exports = function (grunt) {
 
   pages = [
-    "index.jade"
-  ]
+    "index.jade",
+    "about.jade"
+  ];
 
   grunt.config.set('jade', {
     dev: {
       options: {
         pretty: true,
         data: function(dest, src) {
-          context = context.readContext();
-          context.livereload = true;
-          return context;
+          ctx = context.readContext();
+          ctx.livereload = true;
+          return ctx;
         }
       },
       files: [{
@@ -23,21 +24,21 @@ module.exports = function (grunt) {
         cwd: "jade",
         ext: '.html'
       }],
-      prod: {
-        options: {
-          pretty: false,
-          data: function(dest, src) {
-            return readContext();
-          }
-        },
-        files: [{
-          expand: true,
-          src: pages,
-          dest: "dist/",
-          cwd: "jade",
-          ext: '.html'
-        }]
-      }
+    },
+    prod: {
+      options: {
+        pretty: false,
+        data: function(dest, src) {
+          return context.readContext();
+        }
+      },
+      files: [{
+        expand: true,
+        src: pages,
+        dest: "dist/",
+        cwd: "jade",
+        ext: '.html'
+      }]
     }
   });
 

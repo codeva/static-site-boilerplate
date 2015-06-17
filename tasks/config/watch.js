@@ -4,6 +4,7 @@ module.exports = function( grunt ) {
     "**/*.jade",
     "**/*.json",
     "**/*.html",
+    "**/*.md",
     "**/*.js",
     "!dist/**/*"
   ]
